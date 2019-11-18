@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="static/jscripts/hello.js"></script>
+
+<style>
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+</style>
+
+<title>MVC Ajax<</title>
+</head>
+<body>
+	<form id="userForm">
+		<input name="name" id="userName" placeholder="Your Name" /> <input
+			name="place" id="userPlace" placeholder="Your Place" /> <input
+			name="userId" id="recordId" value="" type="hidden" />
+	</form>
+	<button id="checkBtn">Submit</button>
+	<p id="contents"></p>
+
+	<table id="userTable">
+		<thead>
+			<td>User Name</td>
+			<td>Place</td>
+			<td>Edit</td>
+			<td>Delete</td>
+		</thead>
+		<tbody  id="userTableBody">
+		</tbody>
+	</table>
+
+</body>
+</html>
